@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexShop | Búsqueda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">NexShop</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="carrito.html">Carrito <span class="cart-counter">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Búsqueda de Productos</h1>
+        <p class="mb-2 text-center">Encuentra exactamente lo que necesitas.</p>
+        
+        <div class="search-container">
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-input" class="search-input" placeholder="Ej. camisas, zapatos, tecnología...">
+                <button type="submit" class="btn btn-inline">Buscar</button>
+            </form>
+        </div>
+
+        <div class="search-results-area">
+            <h2 id="search-message" class="search-message"></h2>
+            
+            <div id="fake-products" class="catalog-grid">
+                <!-- Producto Ficticio 1 -->
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e32f6b717?q=80&w=2070&auto=format&fit=crop" alt="Camisa Casual" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Camisa Casual Ficticia</h3>
+                        <p class="product-price">$45.00</p>
+                        <button class="btn add-to-cart-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto Ficticio 2 -->
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1988&auto=format&fit=crop" alt="Auriculares Ficticios" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Auriculares Ficticios</h3>
+                        <p class="product-price">$89.99</p>
+                        <button class="btn add-to-cart-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NexShop. Todos los derechos reservados. <a href="https://github.com" target="_blank">Ver en GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
